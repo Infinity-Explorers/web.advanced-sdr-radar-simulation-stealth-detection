@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primitive Tokens */
+  --color-background: #0B0F19;
+  --color-surface: #161F33;
+  --color-primary-text: #F8FAFC;
+  --color-phosphor-green: #00FF88;
+  --color-electric-cyan: #00E5FF;
+  --color-crimson-red: #FF3366;
+  --color-amber: #F59E0B;
+
+  /* Semantic Tokens */
+  --bg-app: var(--color-background);
+  --bg-panel: var(--color-surface);
+  --text-primary: var(--color-primary-text);
+  --text-muted: #94A3B8;
+  
+  --status-nominal: var(--color-phosphor-green);
+  --status-warning: var(--color-amber);
+  --status-threat: var(--color-crimson-red);
+  
+  --radar-sweep-beam: var(--color-phosphor-green);
+  --radar-target-track: var(--color-electric-cyan);
+  --border-panel: rgba(0, 229, 255, 0.2);
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+}
